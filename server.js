@@ -44,7 +44,7 @@ var server = http.createServer(function(request, response){
     response.end();
   }else if(path === "/y"){
     response.statusCode = 200;
-    response.setHeader('Content-Type', 'text/css;charset=utf-8');
+    response.setHeader('Content-Type', 'text/javascript;charset=utf-8');
     response.write(`console.log('这是js内容')`);
     response.end();
   } else {
